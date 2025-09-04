@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="SUNABACO CAFE - 愛媛県今治市のカフェ。日本一のカフェオレが自慢です。">
+  <title>SUNABACO CAFE</title>
+  <style>
+    body { font-family: sans-serif; margin:0; padding:0; line-height:1.6; }
+    header { position:fixed; top:0; left:0; right:0; background:#fff; box-shadow:0 2px 5px rgba(0,0,0,0.1); z-index:1000; }
+    header nav { display:flex; justify-content:space-around; padding:1rem; }
+    header a { text-decoration:none; color:#333; font-weight:bold; }
+    .hero { margin-top:60px; text-align:center; padding:2rem; background:#f8f8f8; }
+    .hero h1 { font-size:2.5rem; margin-bottom:1rem; }
+    .info { margin-top:1rem; }
+    section { padding:3rem 1rem; max-width:1000px; margin:auto; }
+    .intro, .owner, .gallery { display:flex; flex-wrap:wrap; gap:1rem; align-items:center; }
+    .intro img, .gallery img { max-width:100%; height:auto; border-radius:8px; }
+    .intro div { flex:1; }
+    .owner { background:#f0f0f0; padding:2rem; border-radius:8px; }
+    .owner img { width:80px; height:80px; border-radius:50%; margin-right:1rem; }
+    .buttons { display:flex; gap:1rem; justify-content:center; margin:2rem 0; }
+    .buttons a { padding:0.75rem 1.5rem; border-radius:25px; background:#333; color:#fff; text-decoration:none; font-weight:bold; }
+    iframe { width:100%; height:400px; border:0; border-radius:8px; }
+    form { display:flex; flex-direction:column; gap:1rem; }
+    form input, form textarea { padding:0.5rem; border:1px solid #ccc; border-radius:4px; }
+    form button { padding:0.75rem; background:#333; color:#fff; border:none; border-radius:4px; cursor:pointer; }
+    footer { text-align:center; padding:1rem; background:#333; color:#fff; margin-top:2rem; }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="#home">ホーム</a>
+      <a href="#menu">メニュー</a>
+      <a href="#intro">紹介</a>
+      <a href="#access">アクセス</a>
+      <a href="#contact">お問い合わせ</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <h1>SUNABACO CAFE</h1>
+    <p class="info">営業時間：8:00 ～ 17:00<br>定休日：日曜・祝祭日<br>電話番号：0898-00-0000</p>
+    <p>日本一のカフェオレをご提供します。</p>
+  </section>
+
+  <section id="intro">
+    <h2>カフェオレの紹介</h2>
+    <div class="intro">
+      <img src="COFFEE-BEANS.jpg" alt="コーヒー豆">
+      <div>
+        <p>厳選した豆とこだわりの牛乳を使用し、まろやかで香り高いカフェオレをお届けしています。</p>
+      </div>
+    </div>
+    <div class="intro" style="margin-top:2rem;">
+      <img src="ICE-CAFE.jpg" alt="アイスカフェオレ">
+      <div>
+        <p>夏にぴったりのアイスカフェオレも人気です。深煎り豆の風味と冷たい牛乳のバランスが絶妙です。</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="owner">
+    <img src="https://placehold.co/80x80" alt="店長">
+    <div>
+      <h2>店長からのひとこと</h2>
+      <p>「どの世代の方にもくつろいでいただける場所を目指しています。ぜひ一度お立ち寄りください。」</p>
+    </div>
+  </section>
+
+  <div class="buttons">
+    <a href="#menu">メニュー</a>
+    <a href="#access">アクセス</a>
+    <a href="#contact">予約はこちら</a>
+  </div>
+
+  <section class="gallery">
+    <img src="CAFE-1.jpg" alt="ラテアート">
+  </section>
+
+  <section id="access">
+    <h2>アクセス</h2>
+    <p>住所：愛媛県今治市常盤町4-8-18</p>
+    <iframe src="https://www.google.com/maps?q=愛媛県今治市常盤町4-8-18&output=embed"></iframe>
+  </section>
+
+  <section id="contact">
+    <h2>お問い合わせ</h2>
+    <form action="mailto:info@example.com" method="post" enctype="text/plain">
+      <input type="text" name="name" placeholder="お名前" required>
+      <input type="email" name="email" placeholder="メールアドレス" required>
+      <textarea name="message" placeholder="お問い合わせ内容" rows="5" required></textarea>
+      <button type="submit">送信</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 SUNABACO CAFE</p>
+  </footer>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CafeOrCoffeeShop",
+    "name": "SUNABACO CAFE",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "常盤町4-8-18",
+      "addressLocality": "今治市",
+      "addressRegion": "愛媛県",
+      "addressCountry": "JP"
+    },
+    "telephone": "+81-898-00-0000",
+    "openingHours": "Mo-Sa 08:00-17:00",
+    "image": [
+      "COFFEE-BEANS.jpg",
+      "ICE-CAFE.jpg",
+      "CAFE-1.jpg"
+    ]
+  }
+  </script>
+</body>
+</html>
