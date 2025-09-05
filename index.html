@@ -79,18 +79,31 @@
       display: flex;
       flex-wrap: wrap;
       gap: 20px;
-      align-items: center;
+      align-items: flex-start;
     }
 
     .content-img {
-      max-width: 350px;
+      max-width: 300px;
       border-radius: 8px;
       box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     }
 
     .content-text {
       flex: 1;
+      min-width: 200px;
+    }
+
+    .map {
+      flex: 1;
       min-width: 250px;
+    }
+
+    iframe {
+      width: 100%;
+      height: 300px;
+      border: none;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
     }
 
     .menu-category {
@@ -128,21 +141,6 @@
       box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     }
 
-    .owner-message {
-      display: flex;
-      align-items: center;
-      gap: 15px;
-      margin-top: 10px;
-    }
-
-    .owner-img {
-      width: 80px;
-      height: 80px;
-      object-fit: cover;
-      border-radius: 50%;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
-    }
-
     .footer {
       background: #fff8e7;
       text-align: center;
@@ -151,22 +149,15 @@
       border-top: 3px double #8b5e3c;
     }
 
-    .map {
-      margin-top: 20px;
-    }
-
-    iframe {
-      width: 100%;
-      height: 300px;
-      border: none;
-    }
-
     @media (max-width: 600px) {
       .content-row {
         flex-direction: column;
       }
       .content-img {
         max-width: 100%;
+      }
+      iframe {
+        height: 200px;
       }
     }
   </style>
@@ -184,14 +175,17 @@
   </header>
 
   <main>
-    <!-- カフェオレ紹介 -->
+    <!-- カフェオレ紹介 + 地図 -->
     <section class="section">
-      <h2>カフェオレの紹介</h2>
+      <h2>カフェオレの紹介 & アクセス</h2>
       <div class="content-row">
-        <img src="CAFE-1.jpg" alt="カフェオレ" class="content-img">
         <div class="content-text">
+          <img src="CAFE-1.jpg" alt="カフェオレ" class="content-img">
           <p>当店自慢のカフェオレは、日本一と自負しています。</p>
-          <p>力強いコーヒーの苦みと、やわらかなミルクの甘さ。まるで異なる個性が溶け合って、ひとつの物語になる。それが、当店自慢のカフェオレです。飲むたびにほっと深呼吸できるような、そんな時間をお届けします。</p>
+          <p>力強いコーヒーの苦みと、やわらかなミルクの甘さ。まるで異なる個性が溶け合って、ひとつの物語になる。それが、当店自慢のカフェオレです。飲むたびにほっと深呼吸できるような、そんな時間をお届けします</p>
+        </div>
+        <div class="map">
+          <iframe src="https://www.google.com/maps?q=愛媛県今治市常盤町4-8-18&output=embed"></iframe>
         </div>
       </div>
     </section>
@@ -204,7 +198,7 @@
         <h3>☕ ドリンク</h3>
         <ul class="menu-list">
           <li>コーヒー（ブレンド） HOT or ICE</li>
-          <li>カフェオレ HOT or ICE</li>
+          <li>カフェラテ HOT or ICE</li>
           <li>ココア HOT or ICE</li>
           <li>紅茶 HOT or ICE</li>
           <li>コーヒーフロート</li>
@@ -238,25 +232,9 @@
     </section>
   </main>
 
-  <!-- 店主の一言 -->
+  <!-- フッター -->
   <footer class="footer">
-    <section class="section">
-      <h2>店主の一言</h2>
-      <div class="owner-message">
-        <img src="TENCHO.png" alt="店主" class="owner-img">
-        <p>「皆さまにとって心地よい空間と、最高の一杯をご提供します。」</p>
-      </div>
-    </section>
-
-    <!-- 住所と地図 -->
-    <section class="section">
-      <h2>アクセス</h2>
-      <p>愛媛県今治市常盤町4-8-18</p>
-      <div class="map">
-        <iframe src="https://www.google.com/maps?q=愛媛県今治市常盤町4-8-18&output=embed"></iframe>
-      </div>
-    </section>
-
+    <p>住所：愛媛県今治市常盤町4-8-18</p>
     <p>&copy; 2025 SUNABACO CAFE</p>
   </footer>
 
