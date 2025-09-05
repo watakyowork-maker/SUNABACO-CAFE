@@ -10,14 +10,26 @@
       margin: 0;
       padding: 0;
       line-height: 1.8;
-      background: #fdfaf3 url('https://www.transparenttextures.com/patterns/paper-fibers.png');
       color: #3b2f2f;
+      position: relative;
+      z-index: 0;
+    }
+
+    /* 背景にコーヒー豆をぼかして表示 */
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: url("COFFEE-BEANS.JPG") center/cover no-repeat;
+      filter: blur(8px) brightness(0.8);
+      z-index: -1;
     }
 
     header.hero {
       text-align: center;
       padding: 20px;
-      background: #fff8e7;
+      background: rgba(255, 248, 231, 0.9);
       border-bottom: 3px double #8b5e3c;
     }
 
@@ -51,9 +63,9 @@
     }
 
     .section {
-      background: #fffdf7;
+      background: rgba(255, 253, 247, 0.95);
       padding: 40px 20px;
-      max-width: 900px;
+      max-width: 1200px; /* PCで広めに */
       margin: 40px auto;
       border: 2px solid #d1bfa3;
       border-radius: 12px;
@@ -83,24 +95,24 @@
     }
 
     .content-img {
-      max-width: 300px;
+      max-width: 350px;
       border-radius: 8px;
       box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     }
 
     .content-text {
       flex: 1;
-      min-width: 200px;
+      min-width: 250px;
     }
 
     .map {
       flex: 1;
-      min-width: 250px;
+      min-width: 300px;
     }
 
     iframe {
       width: 100%;
-      height: 300px;
+      height: 350px;
       border: none;
       border-radius: 8px;
       box-shadow: 0 2px 6px rgba(0,0,0,0.2);
@@ -142,7 +154,7 @@
     }
 
     .footer {
-      background: #fff8e7;
+      background: rgba(255, 248, 231, 0.9);
       text-align: center;
       padding: 30px 20px;
       margin-top: 40px;
@@ -182,7 +194,7 @@
         <div class="content-text">
           <img src="CAFE-1.jpg" alt="カフェオレ" class="content-img">
           <p>当店自慢のカフェオレは、日本一と自負しています。</p>
-          <p>力強いコーヒーの苦みと、やわらかなミルクの甘さ。まるで異なる個性が溶け合って、ひとつの物語になる。それが、当店自慢のカフェオレです。飲むたびにほっと深呼吸できるような、そんな時間をお届けします</p>
+          <p>力強いコーヒーの苦みと、やわらかなミルクの甘さ。まるで異なる個性が溶け合って、ひとつの物語になる。それが、当店自慢のカフェオレです。飲むたびにほっと深呼吸できるような、そんな時間をお届けします。</p>
         </div>
         <div class="map">
           <iframe src="https://www.google.com/maps?q=愛媛県今治市常盤町4-8-18&output=embed"></iframe>
