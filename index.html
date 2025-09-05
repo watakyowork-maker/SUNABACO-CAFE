@@ -188,20 +188,23 @@
   </header>
 
   <main>
-    <!-- カフェオレ紹介 + 地図 -->
-    <section class="section">
-      <h2>カフェオレの紹介 & アクセス</h2>
-      <div class="content-row">
-        <div class="content-text">
-          <img src="CAFE-1.jpg" alt="カフェオレ" class="content-img">
-          <p>当店自慢のカフェオレは、日本一と自負しています。</p>
-          <p>力強いコーヒーの苦みと、やわらかなミルクの甘さ。まるで異なる個性が溶け合って、ひとつの物語になる。それが、当店自慢のカフェオレです。飲むたびにほっと深呼吸できるような、そんな時間をお届けします。</p>
-        </div>
-        <div class="map">
-          <iframe src="https://www.google.com/maps?q=愛媛県今治市常盤町4-8-18&output=embed"></iframe>
-        </div>
-      </div>
-    </section>
+<!-- カフェオレ紹介 + 地図 -->
+<section class="section">
+  <h2>カフェオレの紹介 & アクセス</h2>
+  <div class="content-row">
+    <div class="content-text">
+      <img src="ICE-CAFE.jpg" alt="カフェオレ" class="content-img">
+      <p>当店自慢のカフェオレは、日本一と自負しています。</p>
+      <p>厳選した豆とこだわりの牛乳を使用し、まろやかでコクのある味わいをお楽しみいただけます。</p>
+    </div>
+    <div class="map">
+      <iframe src="https://www.google.com/maps?q=愛媛県今治市常盤町4-8-18&output=embed"></iframe>
+      <p style="margin-top:8px; font-weight:bold; color:#5a3c2c;">
+        最寄り駅：今治駅から徒歩3分
+      </p>
+    </div>
+  </div>
+</section>
 
     <!-- メニュー -->
     <section class="section">
@@ -244,7 +247,27 @@
       </div>
     </section>
   </main>
-
+<!-- お問い合わせ -->
+<section class="section">
+  <h2>お問い合わせ・ご予約</h2>
+  <form action="mailto:example@example.com" method="POST" enctype="text/plain">
+    <label>お名前：<br>
+      <input type="text" name="name" required style="width:100%; padding:8px; margin-bottom:12px;">
+    </label><br>
+    <label>メールアドレス：<br>
+      <input type="email" name="email" required style="width:100%; padding:8px; margin-bottom:12px;">
+    </label><br>
+    <label>メッセージ：<br>
+      <textarea name="message" rows="5" required style="width:100%; padding:8px; margin-bottom:12px;"></textarea>
+    </label><br>
+    <button type="submit" style="padding:10px 20px; background:#8b5e3c; color:#fff; border:none; border-radius:6px; cursor:pointer;">
+      送信
+    </button>
+  </form>
+  <p style="font-size:0.9rem; color:#555; margin-top:10px;">
+    ※ メールソフトが立ち上がり、そのまま送信できます
+  </p>
+</section>
   <!-- フッター -->
   <footer class="footer">
     <p>住所：愛媛県今治市常盤町4-8-18</p>
